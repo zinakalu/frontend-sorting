@@ -17,7 +17,7 @@ function SortedNumbers({ unsorted, sorted }) {
 
   useEffect(() => {
     if (sorted) {
-      const handle = setTimeout(() => setDisplayedNumbers(sorted), 2000);
+      const handle = setTimeout(() => setDisplayedNumbers(sorted), 1000);
       return () => clearTimeout(handle);
     }
   }, [sorted]);
